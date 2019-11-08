@@ -1,0 +1,45 @@
+type(agent)
+type(route)
+type(report)
+
+
+predicate(enabled, [franklin], [agent])
+predicate(at_location, [frankin, way_point], [agent, route])
+predicate(gained_knowledge, [franklin], [agent])
+predicate(at_surface, [franklin], [agent])
+predicate(achieved_mission, [frankin, way_point], [agent, route])
+
+
+
+operator(reportfindings,
+args = [(franklin, agent), (genios, agent), (way_point, route)],
+preconditions = [
+	condition(enabled, [franklin]),
+	condition(gained_knowledge, [franklin]),
+	condition(at_surface, [franklin])],
+results = [
+	condition(achieved_mission, [franklin, way_point])])
+
+operator(raise,
+args = [(franklin, agent), (way_point, route)],
+preconditions = [
+	condition(enabled, [franklin]),
+	condition(gained_knowledge, [franklin]),
+	condition(at_location, [franklin, way_point])],
+results = [
+  condition(at_surface, [franklin])])
+
+operator(sense,
+args = [(franklin, agent), (way_point, route)],
+preconditions = [
+	condition(enabled, [franklin]),
+	condition(at_location, [franklin, way_point])],
+results = [
+	condition(gained_knowledge, [franklin])])
+
+operator(swim,
+args = [(franklin, agent), (way_point, route)],
+preconditions = [
+	condition(enabled, [franklin])],
+results = [
+	condition(at_location, [franklin, way_point])])

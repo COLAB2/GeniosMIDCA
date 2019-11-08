@@ -1,0 +1,132 @@
+.000599 - [cognitive] Initializing Simulate module 1 ASCIIWorldViewer...done.
+
+.001043 - [cognitive] Initializing Perceive module 1 PerfectObserver...done.
+
+.001296 - [cognitive] Initializing Interpret module 1 MoosGoalInput...done.
+
+.001536 - [cognitive] Initializing Eval module 1 SimpleEval...done.
+
+.001774 - [cognitive] Initializing Intend module 1 SimpleIntend...done.
+
+.002361 - [cognitive] Initializing Plan module 1 JSHOPPlanner...done.
+
+.002646 - [cognitive] Initializing Act module 1 AsynchronousAct...done.
+
+.003322 - Goal Graph initialized.
+
+.003518 - To use goal ordering, call initGoalGraph manually with a custom goal comparator
+
+.003710 - 
+MIDCA is starting. Please enter commands, or '?' + enter for help. Pressing enter with no input will advance the simulation by one phase.
+
+.863650 - Starting cycle 0
+
+.864295 - ****** Starting Simulate Phase ******
+
+.866113 - [
+catherine (agent)
+franklin (agent) : enabled(franklin)
+fumin (agent)
+mike (agent)
+way_point (route)
+xiaobo (agent)
+]
+
+1.935051 - ****** Starting Perceive Phase ******
+
+1.937684 - World observed.
+
+3.375008 - ****** Starting Interpret Phase ******
+
+3.377376 - Please input a goal if desired. Otherwise, press enter to continue
+
+1:19.371919 - Goal added.
+
+1:19.372271 - Please input a goal if desired. Otherwise, press enter to continue
+
+1:23.104944 - ****** Starting Eval Phase ******
+
+1:23.108624 - No current goals. Skipping eval
+
+1:26.612052 - ****** Starting Intend Phase ******
+
+1:26.614657 - Selecting goal(s): Goal(franklin, way_point, predicate: achieved_mission)
+
+1:29.971986 - ****** Starting Plan Phase ******
+
+1:29.978328 - Planning...
+
+1:30.142475 - Reading file /Users/sravyakondrakunta/Documents/git/GeniosMIDCA/midca/examples/../domains/genios/plan/geniosDomain.shp
+
+1:30.142946 - JSUtil>>stringTokenizer is returning %%%
+
+1:30.145008 - JSUtil>>stringTokenizer is returning %%%
+
+1:30.145304 - JSUtil>>stringTokenizer is returning %%%
+
+1:30.145569 - JSUtil>>stringTokenizer is returning %%%
+
+1:30.145822 - JSUtil>>stringTokenizer is returning %%%
+
+1:30.146081 - JSUtil>>stringTokenizer is returning %%%
+
+1:30.146375 - JSUtil>>stringTokenizer is returning %%%
+
+1:30.146781 - JSUtil>>stringTokenizer is returning %%%
+
+1:30.147177 - JSUtil>>stringTokenizer is returning %%%
+
+1:30.147480 - JSUtil>>stringTokenizer is returning %%%
+
+1:30.147740 - JSUtil>>stringTokenizer is returning %%%
+
+1:30.147983 - JSUtil>>stringTokenizer is returning %%%
+
+1:30.148189 - JSUtil>>stringTokenizer is returning %%%
+
+1:30.148395 - JSUtil>>stringTokenizer is returning %%%
+
+1:30.148598 - JSUtil>>stringTokenizer is returning %%%
+
+1:30.148901 - JSUtil>>stringTokenizer is returning %%%
+
+1:30.149179 - JSUtil>>stringTokenizer is returning %%%
+
+1:30.149429 - JSUtil>>stringTokenizer is returning %%%
+
+1:30.149670 - JSUtil>>stringTokenizer is returning %%%
+
+1:30.149909 - Domain file parsed successfully
+
+1:30.150145 - Reading file /Users/sravyakondrakunta/Documents/git/GeniosMIDCA/midca/examples/../domains/genios/plan/geniosProblem.shp
+
+1:30.150357 - JSUtil>>stringTokenizer is returning %%%
+
+1:30.150563 - Problem file parsed successfully
+
+1:30.150813 - Solving Problem :problem
+
+1:30.151136 - _______
+
+1:30.151367 - start
+
+1:30.151608 - depth: 0
+
+1:30.151854 - (achieve-goals (list (achievedmissionfranklin waypoint ) )  ) _______
+
+1:30.152058 - start
+
+1:30.152244 - depth: 1
+
+1:30.152427 - (achieve-goal (achievedmissionfranklin waypoint ) ) 0
+
+1:30.152684 - result: 
+
+1:30.152974 - 2
+
+1:30.153224 - 0 plans found
+
+1:30.153629 - Planning failed for  Goal(franklin, way_point, predicate: achieved_mission)  
+
+1:38.255090 - ****** Starting Act Phase ******
+

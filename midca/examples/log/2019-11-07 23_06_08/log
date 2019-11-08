@@ -1,0 +1,276 @@
+.000548 - [cognitive] Initializing Simulate module 1 ASCIIWorldViewer...done.
+
+.000962 - [cognitive] Initializing Perceive module 1 PerfectObserver...done.
+
+.001195 - [cognitive] Initializing Interpret module 1 MoosGoalInput...done.
+
+.001445 - [cognitive] Initializing Eval module 1 SimpleEval...done.
+
+.001689 - [cognitive] Initializing Intend module 1 SimpleIntend...done.
+
+.001960 - Memory access at key __PlanningCount
+.002229 - [cognitive] Initializing Plan module 1 JSHOPPlanner...done.
+
+.002658 - [cognitive] Initializing Act module 1 AsynchronousAct...done.
+
+.002926 - Memory access at key __goals
+.003105 - Goal Graph initialized.
+
+.003282 - To use goal ordering, call initGoalGraph manually with a custom goal comparator
+
+.003477 - 
+MIDCA is starting. Please enter commands, or '?' + enter for help. Pressing enter with no input will advance the simulation by one phase.
+
+2.781245 - Starting cycle 0
+
+2.782345 - ****** Starting Simulate Phase ******
+
+2.783204 - [
+catherine (agent)
+franklin (agent) : enabled(franklin)
+fumin (agent)
+mike (agent)
+way_point (route)
+xiaobo (agent)
+]
+
+4.588374 - ****** Starting Perceive Phase ******
+
+4.589164 - Memory access at key __world states
+4.590729 - Memory access at key __world states
+4.590995 - World observed.
+
+8.665980 - ****** Starting Interpret Phase ******
+
+8.666659 - Memory access at key __goals
+8.668423 - Please input a goal if desired. Otherwise, press enter to continue
+
+33.563632 - Memory access at key __world states
+33.564099 - Memory access at key __goals
+33.566095 - Goal added.
+
+33.566443 - Please input a goal if desired. Otherwise, press enter to continue
+
+35.275606 - ****** Starting Eval Phase ******
+
+35.276252 - Memory access at key __world states
+35.279439 - No current goals. Skipping eval
+
+35.931626 - ****** Starting Intend Phase ******
+
+35.932306 - Memory access at key __goals
+35.933931 - Memory access at key __current goals
+35.934235 - Selecting goal(s): Goal(franklin, way_point, predicate: achieved_mission)
+
+36.955488 - ****** Starting Plan Phase ******
+
+36.956100 - Memory access at key __world states
+36.957793 - Memory access at key __current goals
+36.959608 - Memory access at key __goals
+36.960024 - Planning...
+
+36.960969 - Memory access at key __PlanningCount
+36.961186 - Memory access at key __PlanningCount
+37.162950 - Reading file /Users/sravyakondrakunta/Documents/git/GeniosMIDCA/midca/examples/../domains/genios/plan/geniosDomain.shp
+
+37.163403 - JSUtil>>stringTokenizer is returning %%%
+
+37.165519 - JSUtil>>stringTokenizer is returning %%%
+
+37.165784 - JSUtil>>stringTokenizer is returning %%%
+
+37.166023 - JSUtil>>stringTokenizer is returning %%%
+
+37.166258 - JSUtil>>stringTokenizer is returning %%%
+
+37.166489 - JSUtil>>stringTokenizer is returning %%%
+
+37.166744 - JSUtil>>stringTokenizer is returning %%%
+
+37.167206 - JSUtil>>stringTokenizer is returning %%%
+
+37.167560 - JSUtil>>stringTokenizer is returning %%%
+
+37.167832 - JSUtil>>stringTokenizer is returning %%%
+
+37.168085 - JSUtil>>stringTokenizer is returning %%%
+
+37.168292 - JSUtil>>stringTokenizer is returning %%%
+
+37.168489 - JSUtil>>stringTokenizer is returning %%%
+
+37.168682 - JSUtil>>stringTokenizer is returning %%%
+
+37.169012 - JSUtil>>stringTokenizer is returning %%%
+
+37.169330 - JSUtil>>stringTokenizer is returning %%%
+
+37.169570 - JSUtil>>stringTokenizer is returning %%%
+
+37.169784 - JSUtil>>stringTokenizer is returning %%%
+
+37.169991 - JSUtil>>stringTokenizer is returning %%%
+
+37.170191 - Domain file parsed successfully
+
+37.170385 - Reading file /Users/sravyakondrakunta/Documents/git/GeniosMIDCA/midca/examples/../domains/genios/plan/geniosProblem.shp
+
+37.170556 - JSUtil>>stringTokenizer is returning %%%
+
+37.170727 - Problem file parsed successfully
+
+37.171064 - Solving Problem :problem
+
+37.171318 - _______
+
+37.171524 - start
+
+37.171739 - depth: 0
+
+37.171937 - (achieve-goals (list (achievedmission franklin waypoint ) )  ) _______
+
+37.172117 - start
+
+37.172288 - depth: 1
+
+37.172460 - (achieve-goal (achievedmission franklin waypoint ) ) _______
+
+37.172650 - start
+
+37.172851 - depth: 2
+
+37.173025 - (!swim franklin waypoint  ) Creating monitor_enabled
+
+37.173261 - Starting monitor_enabled
+
+37.173439 - RUNNING!
+
+37.173603 - Running monitor_enabled
+
+37.173762 - _______
+
+37.173914 - start
+
+37.174112 - depth: 3
+
+37.174393 - (!sense franklin waypoint  ) Creating monitor_atlocation
+
+37.174580 - Starting monitor_atlocation
+
+37.174756 - RUNNING!
+
+37.174926 - Running monitor_atlocation
+
+37.175095 - _______
+
+37.175250 - start
+
+37.175397 - depth: 4
+
+37.175543 - (!raise franklin waypoint  ) Creating monitor_gainedknowledge
+
+37.175727 - Creating monitor_atlocation
+
+37.175907 - Starting monitor_gainedknowledge
+
+37.176073 - RUNNING!
+
+37.176237 - Starting monitor_atlocation
+
+37.176409 - Running monitor_gainedknowledge
+
+37.176622 - RUNNING!
+
+37.176773 - Running monitor_atlocation
+
+37.176929 - _______
+
+37.177134 - start
+
+37.177411 - depth: 5
+
+37.177609 - (!reportfindings franklin ?genios ?findings  ) Creating monitor_gainedknowledge
+
+37.177791 - Creating monitor_atsurface
+
+37.177954 - Starting monitor_gainedknowledge
+
+37.178103 - RUNNING!
+
+37.178250 - Starting monitor_atsurface
+
+37.178396 - Running monitor_gainedknowledge
+
+37.178549 - RUNNING!
+
+37.178770 - Running monitor_atsurface
+
+37.179034 - _______
+
+37.179342 - start
+
+37.179661 - depth: 6
+
+37.179902 - (achieve-goals list nil  ) _______
+
+37.180071 - start
+
+37.180226 - depth: 7
+
+37.180375 - 6
+
+37.180521 - result: 
+
+37.180669 - 8
+
+37.180901 - 1 plans found.
+
+37.181108 - ********* PLANS *******
+
+37.181287 - Plan # 1
+
+37.181479 -  ( (!swim franklin waypoint  )  1.0 (!sense franklin waypoint  )  1.0 (!raise franklin waypoint  )  1.0 (!reportfindings ?franklin5 ?genios5 ?waypoint5  )  1.0  ) 
+
+37.181872 - Planning complete.
+
+37.182035 - Plan: 
+
+37.182199 -   swim(franklin, waypoint)
+
+37.182355 -   sense(franklin, waypoint)
+
+37.182549 -   raise(franklin, waypoint)
+
+37.182810 -   reportfindings(?franklin5, ?genios5, ?waypoint5)
+
+37.183026 - Memory access at key __goals
+51.743379 - ****** Starting Act Phase ******
+
+51.744130 - Memory access at key __current goals
+51.745668 - Memory access at key __goals
+51.746263 - Memory access at key __world states
+51.746576 - Action swim(franklin, waypoint) not complete.
+
+51.746834 - Beginning action execution for swim(franklin, waypoint)
+
+51.747523 - Wrote gplan file to test.xml
+
+59.682460 - Starting cycle 1
+
+59.683027 - ****** Starting Simulate Phase ******
+
+59.685105 - [
+catherine (agent)
+franklin (agent) : enabled(franklin)
+fumin (agent)
+mike (agent)
+way_point (route)
+xiaobo (agent)
+]
+
+1:06.427133 - ****** Starting Perceive Phase ******
+
+1:06.434471 - Memory access at key __world states
+1:06.434788 - Memory access at key __world states
+1:06.435098 - World observed.
+

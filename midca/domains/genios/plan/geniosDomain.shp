@@ -1,0 +1,69 @@
+(defdomain franklin-glider
+  (
+
+    (:operator (!reportfindings ?franklin ?genios ?way_point)
+               ()
+               ((gainedKnowledge ?franklin ) (atSurface ?franklin))
+               ((achievedMission ?franklin ?way_point)))
+
+    (:operator (!raise ?franklin ?way_point)
+               ()
+               ((gainedKnowledge ?franklin)(atLocation ?franklin ?way_point))
+               ((atSurface ?franklin)))
+
+    (:operator (!sense ?franklin ?way_point)
+               ()
+               ((atLocation ?franklin ?way_point))
+               ((gainedKnowledge ?franklin)))
+
+    (:operator (!swim ?franklin ?way_point)
+               ()
+               ((enabled ?franklin))
+               ((atLocation ?franklin ?way_point)))
+
+
+
+    (:method (achieve-goals (list ?goal . ?goals))
+     ()
+     ((achieve-goal ?goal)(achieve-goals list ?goals)))
+
+    (:method (achieve-goals nil ?goal)
+             ()
+             ((achieve-goal ?goal)))
+
+   (:method (achieve-goals list nil)
+            ()
+            ())
+
+
+   (:method (achieve-goal (achievedMission ?franklin ?way_point))
+
+             ;; If the
+             ((enabled ?franklin) (gainedKnowledge ?franklin)
+              (not(atLocation ?franklin ?way_point)))
+             ((!reportfindings ?franklin ?genios ?findings))
+
+             ((enabled ?franklin) (not(gainedKnowledge ?franklin))
+              (not(atLocation ?franklin ?way_point)))
+             ((!swim ?franklin ?way_point)
+              (!sense ?franklin ?way_point)
+              (!raise ?franklin ?way_point)
+              (!reportfindings ?franklin ?genios ?findings))
+
+             ((enabled ?franklin) (not(gainedKnowledge ?franklin))
+              (atLocation ?franklin ?way_point))
+             ((!sense ?franklin ?way_point)
+              (!raise ?franklin ?way_point)
+              (!reportfindings ?franklin ?genios ?findings))
+
+             ((enabled ?franklin) (gainedKnowledge ?franklin)
+              (atLocation ?franklin ?way_point))
+             ((!raise ?franklin ?way_point)
+              (!reportfindings ?franklin ?genios ?findings))
+
+             ((enabled ?franklin) (gainedKnowledge ?franklin)
+              (atSurface ?franklin))
+             ((!reportfindings ?franklin ?genios ?findings)))
+
+  (:- (atSurface ?x) ((not (atLocation ?x))))
+  (:- (atLocation ?x) ((not (atSurface ?x)))) ))

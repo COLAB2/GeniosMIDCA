@@ -1,0 +1,63 @@
+.000780 - Goal Graph initialized.
+
+.001072 - To use goal ordering, call initGoalGraph manually with a custom goal comparator
+
+.001317 - 
+MIDCA is starting. Please enter commands, or '?' + enter for help. Pressing enter with no input will advance the simulation by one phase.
+
+23.419909 - Starting cycle 0
+
+23.420528 - ****** Starting Simulate Phase ******
+
+24.499516 - ****** Starting Perceive Phase ******
+
+25.179597 - ****** Starting Interpret Phase ******
+
+25.915403 - ****** Starting Eval Phase ******
+
+26.588315 - ****** Starting Intend Phase ******
+
+27.163398 - ****** Starting Plan Phase ******
+
+27.667504 - ****** Starting Act Phase ******
+
+28.339342 - Starting cycle 1
+
+28.339976 - ****** Starting Simulate Phase ******
+
+28.843159 - ****** Starting Perceive Phase ******
+
+29.299377 - ****** Starting Interpret Phase ******
+
+29.675220 - ****** Starting Eval Phase ******
+
+30.027334 - ****** Starting Intend Phase ******
+
+30.299094 - ****** Starting Plan Phase ******
+
+30.547206 - ****** Starting Act Phase ******
+
+30.795111 - Starting cycle 2
+
+30.795798 - ****** Starting Simulate Phase ******
+
+31.011091 - ****** Starting Perceive Phase ******
+
+31.227094 - ****** Starting Interpret Phase ******
+
+31.403149 - ****** Starting Eval Phase ******
+
+31.579429 - ****** Starting Intend Phase ******
+
+31.755028 - ****** Starting Plan Phase ******
+
+31.939057 - ****** Starting Act Phase ******
+
+32.123163 - Starting cycle 3
+
+32.123799 - ****** Starting Simulate Phase ******
+
+32.267186 - ****** Starting Perceive Phase ******
+
+32.435112 - ****** Starting Interpret Phase ******
+

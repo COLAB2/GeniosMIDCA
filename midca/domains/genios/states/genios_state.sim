@@ -1,0 +1,8 @@
+agent(franklin)
+agent(fumin)
+route(way_point)
+agent(xiaobo)
+agent(catherine)
+agent(mike)
+
+enabled(franklin)

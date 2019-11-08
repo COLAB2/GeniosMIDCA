@@ -1,0 +1,47 @@
+.000551 - [cognitive] Initializing Simulate module 1 ASCIIWorldViewer...done.
+
+.001002 - [cognitive] Initializing Perceive module 1 PerfectObserver...done.
+
+.001254 - [cognitive] Initializing Interpret module 1 MoosGoalInput...done.
+
+.001492 - [cognitive] Initializing Eval module 1 SimpleEval...done.
+
+.001727 - [cognitive] Initializing Intend module 1 SimpleIntend...done.
+
+.001988 - Memory access at key __PlanningCount
+.002229 - [cognitive] Initializing Plan module 1 JSHOPPlanner...done.
+
+.002542 - [cognitive] Initializing Act module 1 AsynchronousAct...done.
+
+.002868 - Memory access at key __goals
+.003114 - Goal Graph initialized.
+
+.003361 - To use goal ordering, call initGoalGraph manually with a custom goal comparator
+
+.003716 - 
+MIDCA is starting. Please enter commands, or '?' + enter for help. Pressing enter with no input will advance the simulation by one phase.
+
+1.204478 - Starting cycle 0
+
+1.205118 - ****** Starting Simulate Phase ******
+
+1.206974 - [
+catherine (agent)
+franklin (agent) : enabled(franklin)
+fumin (agent)
+mike (agent)
+way_point (route)
+xiaobo (agent)
+]
+
+4.316032 - ****** Starting Perceive Phase ******
+
+4.316639 - Memory access at key __world states
+4.318385 - Memory access at key __world states
+4.318674 - World observed.
+
+5.796133 - ****** Starting Interpret Phase ******
+
+5.796738 - Memory access at key __goals
+5.798508 - Please input a goal if desired. Otherwise, press enter to continue
+

@@ -1,0 +1,13 @@
+.001988 - Memory access at key __PlanningCount
+.002868 - Memory access at key __goals
+1.204478 - Starting cycle 0
+
+1.205118 - ****** Starting Simulate Phase ******
+
+4.316032 - ****** Starting Perceive Phase ******
+
+4.316639 - Memory access at key __world states
+4.318385 - Memory access at key __world states
+5.796133 - ****** Starting Interpret Phase ******
+
+5.796738 - Memory access at key __goals

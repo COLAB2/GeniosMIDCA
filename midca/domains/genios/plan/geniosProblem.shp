@@ -1,0 +1,8 @@
+
+(defproblem problem franklin-mission ((loc)
+
+(enabled franklin )
+)
+ ((achieve-goals (list
+(achievedMission franklin way_point)
+ ))))
